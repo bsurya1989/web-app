@@ -1,0 +1,21 @@
+<server description="Sample Servlet server">
+    <featureManager>
+        <feature>javaee-7.0</feature>
+        <feature>mpOpenAPI-1.0</feature>
+    </featureManager>
+    
+    <httpEndpoint httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint" />
+
+    <library id="OracleLib">
+        <fileset dir="D:/jee5" includes="ojdbc14.jar"/>
+    </library>
+
+    <dataSource jndiName="jdbc/demo" transactional="true">
+        <jdbcDriver libraryRef="OracleLib"/>
+        <properties.oracle driverType="thin" databaseName="XE"
+                           serverName="localhost" portNumber="1521"
+                           user="hr" password="hr"/>
+    </dataSource>
+
+    <webApplication id="web-app" location="web-app.war" name="web-app" contextRoot="/web-app"/>
+</server>
