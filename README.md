@@ -1,5 +1,7 @@
 # web-app
 Open Liberty Java EE Example
+
+
 To run the project provide the following command from the project directory
 
 Prerequisites for the project is you need to install Oracle XE database and need to have ojdbc driver to connect to the database.
