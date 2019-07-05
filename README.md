@@ -2,8 +2,6 @@
 Open Liberty Java EE Example
 
 
-To run the project provide the following command from the project directory
-
 Prerequisites for the project is you need to install Oracle XE database and need to have ojdbc driver to connect to the database.
 
 Following scripts are used to create tables in the database
@@ -21,7 +19,7 @@ conversion_rate number(4,2) not null,
 updatedDate Timestamp not null
 );
 
-
+To run the project provide the following command from the project directory
 
 mvn clean package liberty:run-server
 
